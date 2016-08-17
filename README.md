@@ -11,16 +11,9 @@ typings install --save vinyl-fs
 ## Usage
 
 ```ts
-var map = require('map-stream');
-var vfs = require('vinyl-fs');
-
-var log = function(file, cb) {
-  console.log(file.path);
-  cb(null, file);
-};
+import * as vfs from 'vinyl-fs';
 
 vfs.src(['./js/**/*.js', '!./js/vendor/*.js'])
-  .pipe(map(log))
   .pipe(vfs.dest('./output'));
 ```
 
