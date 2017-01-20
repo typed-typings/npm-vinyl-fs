@@ -2,6 +2,17 @@
 import File = require('vinyl');
 import * as globStream from 'glob-stream';
 import * as through from 'through2';
+import {EventEmitter} from "events";
+
+export interface WatchFunction {
+    (globs: string|string[], cb?: (outEvt: { type: any; path: any; old: any; }) => void): EventEmitter;
+    (globs: string|string[], opt?: { interval?: number; debounceDelay?: number; cwd?: string; maxListeners?: Function; }, cb?: (outEvt: { type: any; path: any; old: any; }) => void): EventEmitter;
+}
+
+/**
+ * watches all files in the glob and runs the given callback as soon as a change to one of the watched files occurs.
+ */
+export declare let watch: WatchFunction;
 
 interface SrcOptions extends globStream.Options, through.Options {
 
