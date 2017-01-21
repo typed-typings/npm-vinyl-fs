@@ -4,14 +4,14 @@ import * as globStream from 'glob-stream';
 import * as through from 'through2';
 import {EventEmitter} from 'events';
 
-export declare interface WatchOptions {
+export interface WatchOptions {
     interval?: number;
     debounceDelay?: number;
     cwd?: string;
     maxListeners?: Function;
 }
 
-export declare interface OutEvent {
+export interface OutEvent {
     type: any;
     path: any;
     old: any;
