@@ -20,10 +20,8 @@ export declare interface OutEvent {
 /**
  * watches all files in the glob and runs the given callback as soon as a change to one of the watched files occurs.
  */
-export function watch(globs: string | Array<string>): EventEmitter;
-export function watch(globs: string | Array<string>, cb: (outEvt: OutEvent) => void): EventEmitter;
-export function watch(globs: string | Array<string>, opt: WatchOptions): EventEmitter;
-export function watch(globs: string | Array<string>, opt: WatchOptions, cb: (outEvt: OutEvent) => void): EventEmitter;
+export function watch(globs?: string | Array<string>, cb?: (outEvt: OutEvent) => void): EventEmitter;
+export function watch(globs?: string | Array<string>, opt?: WatchOptions, cb?: (outEvt: OutEvent) => void): EventEmitter;
 
 interface SrcOptions extends globStream.Options, through.Options {
 
