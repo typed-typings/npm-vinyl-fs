@@ -12,9 +12,9 @@ export interface WatchOptions {
 }
 
 export interface OutEvent {
-    type: any;
-    path: any;
-    old: any;
+    type: 'added' | 'changed' | 'deleted';
+    path: string;
+    old?: string;
 }
 
 /**
