@@ -8,7 +8,6 @@ export interface WatchOptions {
     interval?: number;
     debounceDelay?: number;
     cwd?: string;
-    maxListeners?: Function;
 }
 
 export interface OutEvent {
