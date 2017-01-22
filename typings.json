@@ -1,6 +1,6 @@
 {
   "name": "vinyl-fs",
-  "version": "2.4.3",
+  "version": "0.3.14",
   "homepage": "https://github.com/types/npm-vinyl-fs",
   "main": "index.d.ts",
   "globalDependencies": {
