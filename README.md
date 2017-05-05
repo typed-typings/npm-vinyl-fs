@@ -1,4 +1,6 @@
 # Typed vinyl-fs
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/types/npm-vinyl-fs.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/types/npm-vinyl-fs.svg?branch=master)](https://travis-ci.org/types/npm-vinyl-fs)
 
 Typescript Typings for [vinyl-fs](https://www.npmjs.com/package/vinyl-fs).
